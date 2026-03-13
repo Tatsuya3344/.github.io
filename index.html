@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>株式会社BLACK SUIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/icon10.png"> <!-- ⇚他のページも変更する-->
+</head>
+
+<body class="home">
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/cg2_logo.png" alt="株式会社BLACK SUIT"></a></h1>
+	<!--開閉メニュー-->
+	<div id="menubar">
+	<nav>
+	<ul>
+	<li><a href="service.html">サービス紹介</a></li>
+	<li><a href="value.html">ご利用料金</a></li>
+	<li><a href="staff.html">スタッフ紹介</a></li>
+	<li><a href="recruit.html">採用情報</a></li>
+	<li class="btn"><a href="contact.html">お問い合わせ</a></li>
+	</ul>
+	</nav>
+	</div>
+</header>
+
+<aside class="slide">
+
+<div class="slide img1">
+<img src="images/top2.png" style="border: 0.1px solid #222222;" alt="">
+</div>
+
+<div class="slide img2">
+<img src="images/top1.png" alt="">
+</div>
+
+<div class="slide img3">
+<img src="images/40134.jpg" alt="">
+</div>
+
+<div class="slide-indicators"></div>
+
+<div class="hero-overlay">
+        <div class="hero-text">
+            <p class="hero-tagline">THE ULTIMATE GUARDIAN</p>
+            <h2 class="hero-title">至高の守護を、あなたに。</h2>
+            <p class="hero-description">
+                ボディーガード、ドライバー、そして執事。<br>
+                選び抜かれたプロフェッショナルが、あなたの日常に「品格」を添えます。
+            </p>
+            <div class="hero-buttons">
+                <a href="service.html" class="btn-gold">サービスを見る</a>
+            </div>
+        </div>
+    </div>
+
+</aside>
+
+<main>
+
+
+<div class="bg1">
+
+<section>
+
+<h2 class="c">企業理念</h2>
+
+<h1 id="rinen">"Behind Every Great Life."<br>
+（すべての偉大な人生の、すぐ後ろに）</h1>
+
+<h2 id="setumei"> 私たちは、家事代行を単なる作業の肩代わりとは考えていません。<br>
+それは、あなたの人生に「自由」という名の余白を生み出すクリエイティブな仕事です。
+一切の妥協を許さない品質で、住まいを、そしてマインドをアップデートする。
+偉大な足跡を刻み続けるあなたのために、私たちは存在します。</h2>
+
+
+</div>
+<!--/.bg1-->
+
+<section>
+
+<h2 class="c">お知らせ</h2>
+
+<dl class="new">
+<dt>2049/11/28</dt>
+<dd><a href="">年末年始の営業について</a></dd>
+<dt>2049/10/13</dt>
+<dd>クレジットカード決済に対応しました</dd>
+<dt>2049/04/17</dt>
+<dd><a href="">GW期間中の営業について</a></dd>
+<dt>2049/03/24</dt>
+<dd>4月1日より新生活応援キャンペーン開催！<a href="">詳しくはこちら</a></dd>
+</dl>
+
+</section>
+
+<section id="diagnosis">
+    <h2>クイック診断</h2>
+    
+    <div class="q-box" id="q1">
+        <p>Q1. あなたが最も重視するものは？</p>
+        <button onclick="nextStep('q1', 'q2')">自身の安全・警護</button>
+        <button onclick="nextStep('q1', 'q3')">円滑な移動と時間管理</button>
+    </div>
+
+    <div class="q-box" id="q2" style="display:none;">
+        <p>Q2. どのような場面でのサポートが必要ですか？</p>
+        <button onclick="showResult('result-bodyguard')">日常的な外出</button>
+        <button onclick="showResult('result-special')">特別な式典やイベント</button>
+    </div>
+
+    <div class="q-box" id="q3" style="display:none;">
+        <p>Q3. 主な移動手段は？</p>
+        <button onclick="showResult('result-driver')">専用車での送迎</button>
+        <button onclick="showResult('result-butler')">徒歩や公共機関も含む同行</button>
+    </div>
+
+    <div id="diagnosis-result" style="display:none;">
+        <h3>診断結果：</h3>
+        <p id="result-text"></p>
+        <button onclick="resetDiagnosis()">もう一度診断する</button>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2>よくある質問</h2>
+
+    <details class="accordion">
+        <summary>急な依頼でも対応可能ですか？</summary>
+        <div class="answer">
+            <p>はい、24時間365日体制でエージェントが待機しております。最短30分で指定の場所へ急行いたします。</p>
+        </div>
+    </details>
+
+    <details class="accordion">
+        <summary>料金体系について教えてください。</summary>
+        <div class="answer">
+            <p>基本料金に加え、移動距離や拘束時間に応じたプランをご用意しております。詳細は<a href="value.html">こちらから</a>ご覧ください。</p>
+        </div>
+    </details>
+	
+	<details class="accordion">
+        <summary>英語などの外国語対応は可能ですか？</summary>
+        <div class="answer">
+            <p>〈英語・中国語・フランス語・スペイン語・ロシア語〉が対応可能なバイリンガルエージェントが在籍しております。空港への送迎から滞在中のアテンドまで対応可能です。</p>
+        </div>
+    </details>
+	
+	<details class="accordion">
+        <summary>契約者本人以外（家族や知人）の警護も頼めますか？</summary>
+        <div class="answer">
+            <p>はい、可能です。離れて暮らすご家族の見守りや、お子様の通学送迎など、ご本人様以外へのサービス提供も数多く承っております。</p>
+        </div>
+    </details>
+	
+	<details class="accordion">
+        <summary>決済手段は何がありますか？</summary>
+        <div class="answer">
+            <p>銀行振込、交通系IC、ID、QR決済のほか、2049年10月よりクレジットカードにも対応いたしました。</p>
+        </div>
+    </details>
+</section>
+
+<!-- 初期の注意書き --
+<section>
+
+<h2>テンプレートのご利用前に必ずお読み下さい</h2>
+
+<h3>利用規約のご案内</h3>
+<p>このテンプレートは、<a href="https://template-party.com/">Template Party</a>にて無料配布している『初心者向け 企業・ビジネステーマ 無料ホームページテンプレート tp_beginner10_biz_cool』です。必ずダウンロード先のサイトの<a href="https://template-party.com/read.html">利用規約</a>をご一読の上でご利用下さい。</p>
+<p><strong class="color-check">HP最下部の著作表示『Web Design:Template-Party』は無断で削除しないで下さい。</strong><br>
+わざと見えなく加工する事も禁止です。</p>
+<p><strong class="color-check">下部の著作を外したい場合は</strong><br>
+<a href="https://template-party.com/">Template-Party</a>の<a href="https://template-party.com/member.html">ライセンス契約</a>を行う事でHP下部の著作を外す事ができます。</p>
+
+<h3>当テンプレートの詳しい使い方は</h3>
+<p><a href="_manual.html">こちらをご覧下さい。</a></p>
+
+</section>
+
+<section>
+
+<h2>無料CMS（Template Party CMS）のご案内</h2>
+<p>誰でも簡単にホームページを作れる無料CMS（ノーコードツール）を配布中です。<br>
+管理画面で使いたいパーツを選ぶと、自動で入力フォームが出現しますので、あとはテキスト入力＆画像をドラッグ＆ドロップするだけで、サイトが完成します。<br>
+もちろんWEB業者様のご利用も無料（※当サイトのテンプレがベースの場合）。クライアント向けにご活用下さい。</p>
+<p><a href="https://template-party-cms.com/" target="_blank"><img src="https://template-party.com/images/banner/tpcms_page.jpg" alt=""></a></p>
+
+</section>
+
+<section>
+
+<h2>無料素材サイト（haconana）のご案内</h2>
+<p>写真・イラスト・動画のフリー素材サイトです。ユーザー登録を行うと、１日１点まで無料でDLできます。</p>
+<p><a href="https://haconana.com/" target="_blank"><img src="https://template-party.com/images/banner/haconana_banner2.jpg" alt=""></a></p>
+
+</section>
+
+-->
+
+
+</main>
+
+<footer>
+<ul class="icons">
+<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+<li><a href="#"><i class="fab fa-line"></i></a></li>
+<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+<small>Copyright© 株式会社BLACK SUIT All Rights Reserved.</small>
+</footer>
+
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<!--トップページ診断のスクリプト-->
+<script src="js/toppage.js"></script>
+
+</body>
+</html>
